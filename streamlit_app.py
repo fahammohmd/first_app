@@ -1,5 +1,9 @@
 import streamlit as st
+import pandas as pd
 
 st.title('Machine Learning App 🦾')
 
 st.info('This app builds machine learning models')
+
+df = pd.read_csv('https://storage.googleapis.com/kagglesdsdata/datasets/703056/1228604/penguins_lter.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20250611%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250611T160049Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=922d0a9edd96039860c8316355176e38fc06e68e4f48fa664cebc1072e1d30bd8d4853a49cc13e5aa14e177f27694eb5fe3b635678120665c100fe6d0ac6e7e6f083cc82e41436b6f07474db280d6300d5e85f3ff26e61b5deaf2e73afc66e5dbf2534169503a43efb81ca97a79467c28f0d46d59fb040ff96db22eb52371b9eb2793ada24375966c7db8be4b1ff0f5f9714690fa89ad6babd7c27345ce2e2c0a1cf9a6d80112dd4ab190200cf74be9e4a89417b6d6249dedab400edda92586a909c1a0f9b93d0c77c779d368bd2490460515240ba143cb7b07fc4b8e4a4e7a70343b7273234dd062e9c1fd3524cc1640d7aa6100197dac7c8f9202d850dfea0')
+df
